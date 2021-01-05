@@ -1,0 +1,69 @@
+@import "./colors/_colors.scss";
+@import "./statistics/statisticMain";
+@import url('https://fonts.googleapis.com/css2?family=Roboto:display=swap');
+@import "./mixins/mixins";
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.main-section{
+    background-color: $mainColor;
+    height: 100vh;
+    width: 100%;
+    color:  $mainTextColor;
+    font-family: 'Roboto', sans-serif;
+    
+    @media screen and (max-width: 768px){  
+        height: auto;
+    }
+
+        .statistic-headline-div{
+            width: 100%;
+            @include flexItems(row, center);
+            
+            .text-container{
+                border-bottom: 2px solid $mainTextColor;
+                width: 98%;
+               
+                padding-top: 20px;
+                
+                p{
+                    font-size: 20px;
+                    font-weight: 600;
+                }
+            }
+            
+        }
+
+    .main-content-container{
+        width: 100%;
+        margin-top: 30px;
+        @include flexItems(row, center);
+
+        .second-content-container{
+            height: 100%;
+            width: 98%;
+            @include flexItems(row, space-around);
+
+            @media screen and (max-width: 1024px){  
+                @include flexItems(row, space-around);
+            }
+            @media screen and (max-width: 768px){  
+                @include flexItems(column, center);
+            }
+            @media screen and (max-width: 600px){  
+                @include flexItems(column, space-around);
+            }
+            @media screen and (max-width: 480px){  
+                @include flexItems(column, space-around);
+            }
+            @media screen and (max-width: 320px){  
+                @include flexItems(column, space-around);
+            }
+        }
+    }
+}
+

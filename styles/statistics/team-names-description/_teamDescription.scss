@@ -1,0 +1,19 @@
+@import "../../colors/colors";
+
+.total-goals{
+    text-align: center;
+    
+    :nth-child(1){
+        padding: 4px 2px 0 0;
+        color: $teamDescription;
+
+        @media screen and (min-width: 1920px){
+            font-size: 35px;
+        }
+    }
+    :nth-child(2){
+        padding: 2px 0;
+        font-weight: bold;
+        font-size: 12px;
+    }
+}
