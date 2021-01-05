@@ -406,7 +406,7 @@
 
 @media screen and (min-width: 1920px) {
   .middle-side .middle-over p {
-    font-size: 15px;
+    font-size: 18px;
   }
 }
 
@@ -418,7 +418,7 @@
 
 @media screen and (min-width: 1920px) {
   .middle-side .middle-under p {
-    font-size: 15px;
+    font-size: 18px;
   }
 }
 
@@ -694,7 +694,8 @@
 @media screen and (min-width: 1920px) {
   .results-graphic-container .result-graphic {
     height: 25px;
-    margin: 10px 0;
+    margin: 8px 0;
+    font-size: 17px;
   }
 }
 
